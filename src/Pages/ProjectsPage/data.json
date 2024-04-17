@@ -1,0 +1,12 @@
+[
+  {
+    "name": "This website",
+    "date": "17th of April 2024",
+    "description": "This is a website.",
+    "skills": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ]
+  }
+]

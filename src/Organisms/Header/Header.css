@@ -1,0 +1,31 @@
+/* Header.css */
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.header > img {
+    position: absolute;
+    padding: 10px;
+    left: 0;
+}
+
+.header > nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.header > nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.header > nav li {
+    cursor: pointer;
+}
