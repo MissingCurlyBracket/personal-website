@@ -11,6 +11,8 @@
     position: absolute;
     padding: 10px;
     left: 0;
+    height: 70px;
+    width: 70px;
 }
 
 .header > nav {
