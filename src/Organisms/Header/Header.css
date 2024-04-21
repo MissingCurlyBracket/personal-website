@@ -1,13 +1,13 @@
 /* Header.css */
 
-.header {
+.navigation {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 10px;
 }
 
-.header > img {
+img {
     position: absolute;
     padding: 10px;
     left: 0;
@@ -15,19 +15,19 @@
     width: 70px;
 }
 
-.header > nav {
+.navigation {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 10px;
 }
 
-.header > nav ul {
+.navigation ul {
     list-style: none;
     display: flex;
     gap: 20px;
 }
 
-.header > nav li {
+.navigation li {
     cursor: pointer;
 }
