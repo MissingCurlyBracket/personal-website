@@ -5,6 +5,7 @@ import ContactPage from "./Pages/ContactPage/ContactPage";
 import NoPage from "./Pages/NoPage/NoPage";
 import React from "react";
 import Header from "./Organisms/Header/Header";
+import ExperiencePage from "./Pages/ExperiencePage/ExperiencePage";
 
 export default function App() {
     return (
@@ -12,6 +13,7 @@ export default function App() {
             <Header/>
             <Routes>
                 <Route path="/" element={<HomePage/>}/>
+                <Route path="experience" element={<ExperiencePage/>}/>
                 <Route path="projects" element={<ProjectsPage/>}/>
                 <Route path="contact" element={<ContactPage/>}/>
                 <Route path="*" element={<NoPage/>}/>

@@ -1,0 +1,14 @@
+[
+  {
+    "company": "EasyLMS",
+    "position": "Software Engineer",
+    "period": "July 2023 - Present",
+    "description": "Developing and maintaining the EasyLMS platform.",
+    "skills": [
+      "React",
+      "PHP",
+      "AWS",
+      "Docker"
+    ]
+  }
+]

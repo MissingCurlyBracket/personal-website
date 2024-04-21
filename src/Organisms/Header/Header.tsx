@@ -8,6 +8,7 @@ export default function Header() {
             <nav>
                 <ul>
                     <HeaderOption href='/' text="Home"/>
+                    <HeaderOption href="/experience" text="Experience"/>
                     <HeaderOption href="/projects" text="Projects"/>
                     <HeaderOption href="/contact" text="Contact"/>
                 </ul>
