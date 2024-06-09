@@ -1,16 +1,18 @@
+.experience-page {
+    padding: 10px;
+}
+
 .experiences {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 20px;
     width: 100%;
-    padding: 20px;
 }
 
 .experience-item {
     background-color: #f9f9f9;
     border: 1px solid #ddd;
     border-radius: 8px;
-    padding: 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
