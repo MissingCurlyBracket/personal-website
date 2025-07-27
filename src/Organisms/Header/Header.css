@@ -41,6 +41,24 @@ body {
 .navigation a {
     color: white;
     text-decoration: none;
+    position: relative;
+    transition: all 0.2s ease;
+}
+
+.navigation a::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transform: translateX(-50%);
+    transition: width 0.3s ease;
+}
+
+.navigation a.selected::after {
+    width: 100%;
 }
 
 /* Responsive Design: Adjust grid layout on smaller screens */

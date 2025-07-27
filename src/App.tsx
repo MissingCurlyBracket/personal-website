@@ -6,6 +6,7 @@ import NoPage from "./Pages/NoPage/NoPage";
 import React from "react";
 import Header from "./Organisms/Header/Header";
 import ExperiencePage from "./Pages/ExperiencePage/ExperiencePage";
+import PapersPage from "./Pages/PapersPage/PapersPage";
 
 export default function App() {
     return (
@@ -15,6 +16,7 @@ export default function App() {
                 <Route path="/" element={<HomePage/>}/>
                 <Route path="experience" element={<ExperiencePage/>}/>
                 <Route path="projects" element={<ProjectsPage/>}/>
+                <Route path={"papers"} element={<PapersPage/>}/>
                 <Route path="contact" element={<ContactPage/>}/>
                 <Route path="*" element={<NoPage/>}/>
             </Routes>
