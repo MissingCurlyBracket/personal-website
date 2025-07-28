@@ -1,11 +1,11 @@
-import {ReactElement} from "react";
+import React, { ReactElement } from 'react';
 
 interface PageTitleProps {
-    title: string;
+  title: string;
 }
 
-export default function PageTitle({title}: PageTitleProps): Readonly<ReactElement> {
-    return (
-        <h2>{title}</h2>
-    );
+export default function PageTitle({
+  title,
+}: PageTitleProps): Readonly<ReactElement> {
+  return <h2>{title}</h2>;
 }

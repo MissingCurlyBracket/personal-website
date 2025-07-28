@@ -1,0 +1,12 @@
+{
+  "title": "\"How Much Data is Enough?\" Learning Curves for Machine Learning",
+  "abstract": "The conducted research explores fitting algorithms for learning curves. Learning curves describe how the performance of a machine learning model changes with the size of the training input. Therefore, fitting these learning curves and extrapolating them can help determine the required data set size for any desired performance. \n\nThe paper specifically explores the Learning Curve Database (LCDB) and investigates alternative fitting algorithms to the employed Levenberg-Marquardt (LM). These algorithms are Gradient Descent and BFGS, and the paper aims to determine whether they are more suitable for fitting learning curves than LM. \n\nThe algorithms were implemented, both in their default and optimised states, and the results were compared to LM. The results measured mean-squared error (MSE), L1 Loss, individual parametric model performance, and computation time. \n\nThe findings showed that Gradient Descent is not a suitable alternative to LM; however, BFGS proved to be competitive, as it is practically identical in performance while being significantly faster than LM. \n\nFurther exploration of the BFGS algorithm and its application on learning curve fitting is recommended. Comparisons between the MSE distribution of LM and BFGS can be further explored, as well as comparisons on new parametric models, learners, and datasets.",
+  "keyWords": [
+    "Learning Curves",
+    "Levenberg-Marquardt",
+    "Gradient Descent",
+    "Broyden–Fletcher–Goldfarb–Shanno",
+    "LCDB"
+  ],
+  "paperUrl": "./CSE3000_Lucian_Negru_Final.pdf"
+}
