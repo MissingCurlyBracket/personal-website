@@ -1,6 +1,7 @@
 .paper-block {
     height: 75vh;
     width: 50vw;
+    min-width: 400px;
     margin: 0 auto;
     padding-bottom: 2rem;
 }
