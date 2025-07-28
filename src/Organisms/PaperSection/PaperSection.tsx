@@ -20,6 +20,8 @@ export default function PaperSection({
   paperKeywords,
   paperUrl,
 }: Readonly<PaperSectionProps>) {
+  const defaultLayoutPluginInstance = defaultLayoutPlugin();
+  
   return (
     <div className={'paper-section'}>
       <PaperTitle paperTitle={paperTitle} />
@@ -30,7 +32,13 @@ export default function PaperSection({
           'https://unpkg.com/pdfjs-dist@3.11.174/build/pdf.worker.min.js'
         }
       >
-        <Viewer fileUrl={paperUrl} plugins={[defaultLayoutPlugin()]} />
+        <div
+          style={{
+            height: '100%',
+          }}
+        >
+          <Viewer fileUrl={paperUrl} plugins={[defaultLayoutPluginInstance]} />
+        </div>
       </Worker>
     </div>
   );
