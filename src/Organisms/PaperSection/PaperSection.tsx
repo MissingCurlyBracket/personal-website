@@ -6,6 +6,7 @@ import '@react-pdf-viewer/core/lib/styles/index.css';
 import '@react-pdf-viewer/default-layout/lib/styles/index.css';
 import PaperAbstract from '../../Atoms/PaperAbstract/PaperAbstract';
 import PaperKeywords from '../../Atoms/PaperKeywords/PaperKeywords';
+import './PaperSection.css';
 
 interface PaperSectionProps {
   paperTitle: string;
@@ -21,7 +22,7 @@ export default function PaperSection({
   paperUrl,
 }: Readonly<PaperSectionProps>) {
   const defaultLayoutPluginInstance = defaultLayoutPlugin();
-  
+
   return (
     <div className={'paper-section'}>
       <PaperTitle paperTitle={paperTitle} />
@@ -32,11 +33,7 @@ export default function PaperSection({
           'https://unpkg.com/pdfjs-dist@3.11.174/build/pdf.worker.min.js'
         }
       >
-        <div
-          style={{
-            height: '100%',
-          }}
-        >
+        <div className={'paper-block'}>
           <Viewer fileUrl={paperUrl} plugins={[defaultLayoutPluginInstance]} />
         </div>
       </Worker>
